@@ -1,0 +1,75 @@
+body {
+    background-color: rgba(255, 60, 0, 0.856);
+    margin: 0;
+    font-family: rubik;
+    color: white;
+}
+.img-title {
+    height: 180px;
+    width: 400px;
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+    
+}
+.card { 
+    /* el id del pokemon */
+    list-style: none;
+    padding: 40px;
+    background-color: #e7d1c8;
+    color: #503114;
+    border-radius: 1%;
+}
+.card-title {
+    /* nombre del pokemon */
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: #3636f3
+}
+.card-subtitle {
+    /* type del pokemon */
+    color: #3b8b8f;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+.card-image {
+    height: 150px;
+}
+#pokedex {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-2px);
+    }
+    80% {
+        transform: translateY(-0px);
+    }
+}
+
+
